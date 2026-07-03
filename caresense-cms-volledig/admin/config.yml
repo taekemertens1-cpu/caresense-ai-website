@@ -1,0 +1,325 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: taekemertens1-cpu/caresense-ai-website
+  branch: main
+
+media_folder: "assets"
+public_folder: "/assets"
+
+collections:
+  - name: site
+    label: Website inhoud
+    files:
+      - name: content
+        label: Alle tekst en kleuren
+        file: content.json
+        fields:
+          - name: home
+            label: "Homepage"
+            widget: object
+            fields:
+              - { name: heroPill, label: "Hero label", widget: string }
+              - { name: heroTitleLine1, label: "Hero titel (regel 1)", widget: string }
+              - { name: heroTitleLine2, label: "Hero titel (regel 2)", widget: string }
+              - { name: heroSubtitle, label: "Hero ondertitel", widget: text }
+              - { name: heroCtaPrimary, label: "Hero knop primair", widget: string }
+              - { name: heroCtaSecondary, label: "Hero knop secundair", widget: string }
+              - { name: trust1, label: "Vertrouwenspunt 1", widget: string }
+              - { name: trust2, label: "Vertrouwenspunt 2", widget: string }
+              - { name: trust3, label: "Vertrouwenspunt 3", widget: string }
+              - { name: whatIsEyebrow, label: "Wat is kicker", widget: string }
+              - { name: whatIsTitleLine1, label: "Wat is titel (regel 1)", widget: string }
+              - { name: whatIsTitleLine2, label: "Wat is titel (regel 2)", widget: string }
+              - { name: whatIsLead, label: "Wat is introtekst", widget: text }
+              - { name: whatIsClosing, label: "Wat is slotzin (kan vetgedrukte woorden bevatten)", widget: text }
+              - { name: pillarsEyebrow, label: "Pillars kicker", widget: string }
+              - { name: pillarsTitle, label: "Pillars titel", widget: string }
+              - { name: pillarsLead, label: "Pillars introtekst", widget: text }
+              - { name: pillar1Title, label: "Pijler 1 titel", widget: string }
+              - { name: pillar1Desc, label: "Pijler 1 beschrijving", widget: text }
+              - { name: pillar1Link, label: "Pijler 1 linktekst", widget: string }
+              - { name: pillar2Title, label: "Pijler 2 titel", widget: string }
+              - { name: pillar2Desc, label: "Pijler 2 beschrijving", widget: text }
+              - { name: pillar2Link, label: "Pijler 2 linktekst", widget: string }
+              - { name: pillar3Title, label: "Pijler 3 titel", widget: string }
+              - { name: pillar3Desc, label: "Pijler 3 beschrijving", widget: text }
+              - { name: pillar3Link, label: "Pijler 3 linktekst", widget: string }
+              - { name: howEyebrow, label: "Hoe kicker", widget: string }
+              - { name: howTitle, label: "Hoe titel", widget: string }
+              - { name: howLead, label: "Hoe introtekst", widget: text }
+              - { name: howStep1Title, label: "Hoe stap 1 titel", widget: string }
+              - { name: howStep1Desc, label: "Hoe stap 1 beschrijving", widget: text }
+              - { name: howStep2Title, label: "Hoe stap 2 titel", widget: string }
+              - { name: howStep2Desc, label: "Hoe stap 2 beschrijving", widget: text }
+              - { name: howStep3Title, label: "Hoe stap 3 titel", widget: string }
+              - { name: howStep3Desc, label: "Hoe stap 3 beschrijving", widget: text }
+              - { name: featureEyebrow, label: "Functie kicker", widget: string }
+              - { name: featureTitle, label: "Functie titel", widget: string }
+              - { name: featureLead, label: "Functie introtekst", widget: text }
+              - { name: featureCheck1, label: "Functie vinkpunt 1", widget: string }
+              - { name: featureCheck2, label: "Functie vinkpunt 2", widget: text }
+              - { name: featureCheck3, label: "Functie vinkpunt 3", widget: string }
+              - { name: featureBtn, label: "Functie knoptekst", widget: string }
+              - { name: stat1Number, label: "Statistiek 1 getal", widget: string }
+              - { name: stat1Suffix, label: "Statistiek 1 achtervoegsel", widget: string }
+              - { name: stat1Label, label: "Statistiek 1 label", widget: string }
+              - { name: stat2Number, label: "Statistiek 2 getal", widget: string }
+              - { name: stat2Suffix, label: "Statistiek 2 achtervoegsel", widget: string }
+              - { name: stat2Label, label: "Statistiek 2 label", widget: string }
+              - { name: stat3Number, label: "Statistiek 3 getal", widget: string }
+              - { name: stat3Suffix, label: "Statistiek 3 achtervoegsel", widget: string }
+              - { name: stat3Label, label: "Statistiek 3 label", widget: string }
+              - { name: stat4Number, label: "Statistiek 4 getal", widget: string }
+              - { name: stat4Suffix, label: "Statistiek 4 achtervoegsel", widget: string }
+              - { name: stat4Label, label: "Statistiek 4 label", widget: string }
+              - { name: testimonialsEyebrow, label: "Testimonials kicker", widget: string }
+              - { name: testimonialsTitle, label: "Testimonials titel", widget: string }
+              - { name: testimonial1Quote, label: "Testimonial 1 citaat", widget: text }
+              - { name: testimonial1Name, label: "Testimonial 1 naam", widget: string }
+              - { name: testimonial1Role, label: "Testimonial 1 functie", widget: string }
+              - { name: testimonial2Quote, label: "Testimonial 2 citaat", widget: text }
+              - { name: testimonial2Name, label: "Testimonial 2 naam", widget: string }
+              - { name: testimonial2Role, label: "Testimonial 2 functie", widget: string }
+              - { name: testimonial3Quote, label: "Testimonial 3 citaat", widget: text }
+              - { name: testimonial3Name, label: "Testimonial 3 naam", widget: string }
+              - { name: testimonial3Role, label: "Testimonial 3 functie", widget: string }
+              - { name: ctaTitle, label: "Knop titel", widget: string }
+              - { name: ctaText, label: "Knop tekst", widget: text }
+              - { name: ctaBtn1, label: "Knop knoptekst 1", widget: string }
+              - { name: ctaBtn2, label: "Knop knoptekst 2", widget: string }
+              - { name: ctaTrust1, label: "Knop vertrouwenspunt 1", widget: string }
+              - { name: ctaTrust2, label: "Knop vertrouwenspunt 2", widget: string }
+              - { name: ctaTrust3, label: "Knop vertrouwenspunt 3", widget: string }
+          - name: adl
+            label: "ADL-Actief"
+            widget: object
+            fields:
+              - { name: heroPill, label: "Hero label", widget: string }
+              - { name: heroTitleLine1, label: "Hero titel (regel 1)", widget: string }
+              - { name: heroTitleLine2, label: "Hero titel (regel 2)", widget: string }
+              - { name: heroText, label: "Hero tekst", widget: text }
+              - { name: ctaBtn1, label: "Knop knoptekst 1", widget: string }
+              - { name: ctaBtn2, label: "Knop knoptekst 2", widget: string }
+              - { name: splitEyebrow, label: "Sectie kicker", widget: string }
+              - { name: splitTitle, label: "Sectie titel", widget: string }
+              - { name: splitLead, label: "Sectie introtekst", widget: text }
+              - { name: check1, label: "Vinkpunt 1", widget: string }
+              - { name: check2, label: "Vinkpunt 2", widget: string }
+              - { name: check3, label: "Vinkpunt 3", widget: string }
+              - { name: featuresEyebrow, label: "Features kicker", widget: string }
+              - { name: featuresTitle, label: "Features titel", widget: string }
+              - { name: featuresLead, label: "Features introtekst", widget: text }
+              - { name: feature1Title, label: "Functie 1 titel", widget: string }
+              - { name: feature1Desc, label: "Functie 1 beschrijving", widget: text }
+              - { name: feature2Title, label: "Functie 2 titel", widget: string }
+              - { name: feature2Desc, label: "Functie 2 beschrijving", widget: text }
+              - { name: feature3Title, label: "Functie 3 titel", widget: string }
+              - { name: feature3Desc, label: "Functie 3 beschrijving", widget: text }
+              - { name: feature4Title, label: "Functie 4 titel", widget: string }
+              - { name: feature4Desc, label: "Functie 4 beschrijving", widget: text }
+              - { name: feature5Title, label: "Functie 5 titel", widget: string }
+              - { name: feature5Desc, label: "Functie 5 beschrijving", widget: text }
+              - { name: feature6Title, label: "Functie 6 titel", widget: string }
+              - { name: feature6Desc, label: "Functie 6 beschrijving", widget: text }
+              - { name: stepsEyebrow, label: "Steps kicker", widget: string }
+              - { name: stepsTitle, label: "Steps titel", widget: string }
+              - { name: step1Title, label: "Stap 1 titel", widget: string }
+              - { name: step1Desc, label: "Stap 1 beschrijving", widget: text }
+              - { name: step2Title, label: "Stap 2 titel", widget: string }
+              - { name: step2Desc, label: "Stap 2 beschrijving", widget: text }
+              - { name: step3Title, label: "Stap 3 titel", widget: string }
+              - { name: step3Desc, label: "Stap 3 beschrijving", widget: text }
+              - { name: ctaTitle, label: "Knop titel", widget: string }
+              - { name: ctaText, label: "Knop tekst", widget: text }
+          - name: caresense
+            label: "CareSense AI (verzorgenden)"
+            widget: object
+            fields:
+              - { name: heroPill, label: "Hero label", widget: string }
+              - { name: heroTitleLine1, label: "Hero titel (regel 1)", widget: string }
+              - { name: heroTitleLine2, label: "Hero titel (regel 2)", widget: string }
+              - { name: heroText, label: "Hero tekst", widget: text }
+              - { name: ctaBtn1, label: "Knop knoptekst 1", widget: string }
+              - { name: ctaBtn2, label: "Knop knoptekst 2", widget: string }
+              - { name: dashEyebrow, label: "Dashboard kicker", widget: string }
+              - { name: dashTitle, label: "Dashboard titel", widget: string }
+              - { name: dashLead, label: "Dashboard introtekst", widget: text }
+              - { name: check1, label: "Vinkpunt 1", widget: string }
+              - { name: check2, label: "Vinkpunt 2", widget: string }
+              - { name: check3, label: "Vinkpunt 3", widget: string }
+              - { name: featuresEyebrow, label: "Features kicker", widget: string }
+              - { name: featuresTitle, label: "Features titel", widget: string }
+              - { name: featuresLead, label: "Features introtekst", widget: text }
+              - { name: feature1Title, label: "Functie 1 titel", widget: string }
+              - { name: feature1Desc, label: "Functie 1 beschrijving", widget: text }
+              - { name: feature2Title, label: "Functie 2 titel", widget: string }
+              - { name: feature2Desc, label: "Functie 2 beschrijving", widget: text }
+              - { name: feature3Title, label: "Functie 3 titel", widget: string }
+              - { name: feature3Desc, label: "Functie 3 beschrijving", widget: text }
+              - { name: feature4Title, label: "Functie 4 titel", widget: string }
+              - { name: feature4Desc, label: "Functie 4 beschrijving", widget: text }
+              - { name: feature5Title, label: "Functie 5 titel", widget: string }
+              - { name: feature5Desc, label: "Functie 5 beschrijving", widget: text }
+              - { name: feature6Title, label: "Functie 6 titel", widget: string }
+              - { name: feature6Desc, label: "Functie 6 beschrijving", widget: text }
+              - { name: ctaTitle, label: "Knop titel", widget: string }
+              - { name: ctaText, label: "Knop tekst", widget: text }
+          - name: sensoren
+            label: "Sensoren"
+            widget: object
+            fields:
+              - { name: heroPill, label: "Hero label", widget: string }
+              - { name: heroTitleLine1, label: "Hero titel (regel 1)", widget: string }
+              - { name: heroTitleLine2, label: "Hero titel (regel 2)", widget: string }
+              - { name: heroText, label: "Hero tekst", widget: text }
+              - { name: stage1Title1, label: "Fase 1 titel 1", widget: string }
+              - { name: stage1Title2, label: "Fase 1 titel 2", widget: string }
+              - { name: stage1Text, label: "Fase 1 tekst", widget: text }
+              - { name: stage2Title1, label: "Fase 2 titel 1", widget: string }
+              - { name: stage2Title2, label: "Fase 2 titel 2", widget: string }
+              - { name: stage2Text, label: "Fase 2 tekst", widget: text }
+              - { name: stage3Title1, label: "Fase 3 titel 1", widget: string }
+              - { name: stage3Title2, label: "Fase 3 titel 2", widget: string }
+              - { name: stage3Text, label: "Fase 3 tekst", widget: text }
+              - { name: stage4Title1, label: "Fase 4 titel 1", widget: string }
+              - { name: stage4Title2, label: "Fase 4 titel 2", widget: string }
+              - { name: stage4Text, label: "Fase 4 tekst", widget: text }
+              - { name: hubEyebrow, label: "Hub kicker", widget: string }
+              - { name: hubTitle, label: "Hub titel", widget: string }
+              - { name: hubLead, label: "Hub introtekst", widget: text }
+              - { name: hubCheck1, label: "Hub vinkpunt 1", widget: string }
+              - { name: hubCheck2, label: "Hub vinkpunt 2", widget: string }
+              - { name: hubCheck3, label: "Hub vinkpunt 3", widget: string }
+              - { name: hubCheck4, label: "Hub vinkpunt 4", widget: string }
+              - { name: sensorsEyebrow, label: "Sensors kicker", widget: string }
+              - { name: sensorsTitle, label: "Sensors titel", widget: string }
+              - { name: sensorsLead, label: "Sensors introtekst", widget: text }
+              - { name: sensor1Title, label: "Sensor 1 titel", widget: string }
+              - { name: sensor1Desc, label: "Sensor 1 beschrijving", widget: text }
+              - { name: sensor2Title, label: "Sensor 2 titel", widget: string }
+              - { name: sensor2Desc, label: "Sensor 2 beschrijving", widget: text }
+              - { name: sensor3Title, label: "Sensor 3 titel", widget: string }
+              - { name: sensor3Desc, label: "Sensor 3 beschrijving", widget: text }
+              - { name: sensor4Title, label: "Sensor 4 titel", widget: string }
+              - { name: sensor4Desc, label: "Sensor 4 beschrijving", widget: text }
+              - { name: sensor5Title, label: "Sensor 5 titel", widget: string }
+              - { name: sensor5Desc, label: "Sensor 5 beschrijving", widget: text }
+              - { name: sensor6Title, label: "Sensor 6 titel", widget: string }
+              - { name: sensor6Desc, label: "Sensor 6 beschrijving", widget: text }
+              - { name: privacyTitle, label: "Privacy titel", widget: string }
+              - { name: privacyLead, label: "Privacy introtekst", widget: text }
+              - { name: ctaBtn1, label: "Knop knoptekst 1", widget: string }
+              - { name: ctaBtn2, label: "Knop knoptekst 2", widget: string }
+          - name: prijzen
+            label: "Prijzen"
+            widget: object
+            fields:
+              - { name: heroPill, label: "Hero label", widget: string }
+              - { name: heroTitleLine1, label: "Hero titel (regel 1)", widget: string }
+              - { name: heroTitleLine2, label: "Hero titel (regel 2)", widget: string }
+              - { name: heroText, label: "Hero tekst", widget: text }
+              - { name: saveHint, label: "Besparings tip", widget: string }
+              - { name: plan1Name, label: "Plan 1 naam", widget: string }
+              - { name: plan1Desc, label: "Plan 1 beschrijving", widget: text }
+              - { name: plan1Monthly, label: "Plan 1 maandprijs", widget: string }
+              - { name: plan1Yearly, label: "Plan 1 jaarprijs", widget: string }
+              - { name: plan1Note, label: "Plan 1 notitie", widget: string }
+              - { name: plan1Btn, label: "Plan 1 knoptekst", widget: string }
+              - { name: plan2Name, label: "Plan 2 naam", widget: string }
+              - { name: plan2Tag, label: "Plan 2 badge", widget: string }
+              - { name: plan2Desc, label: "Plan 2 beschrijving", widget: text }
+              - { name: plan2Monthly, label: "Plan 2 maandprijs", widget: string }
+              - { name: plan2Yearly, label: "Plan 2 jaarprijs", widget: string }
+              - { name: plan2Note, label: "Plan 2 notitie", widget: string }
+              - { name: plan2Btn, label: "Plan 2 knoptekst", widget: string }
+              - { name: plan3Name, label: "Plan 3 naam", widget: string }
+              - { name: plan3Desc, label: "Plan 3 beschrijving", widget: text }
+              - { name: plan3Monthly, label: "Plan 3 maandprijs", widget: string }
+              - { name: plan3Yearly, label: "Plan 3 jaarprijs", widget: string }
+              - { name: plan3Note, label: "Plan 3 notitie", widget: string }
+              - { name: plan3Btn, label: "Plan 3 knoptekst", widget: string }
+              - { name: priceFoot, label: "Price voettekst", widget: text }
+              - { name: faqEyebrow, label: "FAQ kicker", widget: string }
+              - { name: faqTitle, label: "FAQ titel", widget: string }
+              - { name: faq1Q, label: "FAQ 1 vraag", widget: string }
+              - { name: faq1A, label: "FAQ 1 antwoord", widget: text }
+              - { name: faq2Q, label: "FAQ 2 vraag", widget: string }
+              - { name: faq2A, label: "FAQ 2 antwoord", widget: text }
+              - { name: faq3Q, label: "FAQ 3 vraag", widget: string }
+              - { name: faq3A, label: "FAQ 3 antwoord", widget: text }
+              - { name: faq4Q, label: "FAQ 4 vraag", widget: string }
+              - { name: faq4A, label: "FAQ 4 antwoord", widget: text }
+              - { name: faq5Q, label: "FAQ 5 vraag", widget: string }
+              - { name: faq5A, label: "FAQ 5 antwoord", widget: text }
+          - name: over
+            label: "Wie wij zijn"
+            widget: object
+            fields:
+              - { name: heroPill, label: "Hero label", widget: string }
+              - { name: heroTitleLine1, label: "Hero titel (regel 1)", widget: string }
+              - { name: heroTitleLine2, label: "Hero titel (regel 2)", widget: string }
+              - { name: heroText, label: "Hero tekst", widget: text }
+              - { name: missionEyebrow, label: "Missie kicker", widget: string }
+              - { name: missionTitle, label: "Missie titel", widget: string }
+              - { name: missionLead, label: "Missie introtekst", widget: text }
+              - { name: missionText2, label: "Missie tekst 2", widget: text }
+              - { name: valuesEyebrow, label: "Values kicker", widget: string }
+              - { name: valuesTitle, label: "Values titel", widget: string }
+              - { name: value1Title, label: "Waarde 1 titel", widget: string }
+              - { name: value1Desc, label: "Waarde 1 beschrijving", widget: text }
+              - { name: value2Title, label: "Waarde 2 titel", widget: string }
+              - { name: value2Desc, label: "Waarde 2 beschrijving", widget: text }
+              - { name: value3Title, label: "Waarde 3 titel", widget: string }
+              - { name: value3Desc, label: "Waarde 3 beschrijving", widget: text }
+              - { name: storyEyebrow, label: "Verhaal kicker", widget: string }
+              - { name: storyTitle, label: "Verhaal titel", widget: string }
+              - { name: tl1Year, label: "Tijdlijn 1 jaar", widget: string }
+              - { name: tl1Title, label: "Tijdlijn 1 titel", widget: string }
+              - { name: tl1Desc, label: "Tijdlijn 1 beschrijving", widget: text }
+              - { name: tl2Year, label: "Tijdlijn 2 jaar", widget: string }
+              - { name: tl2Title, label: "Tijdlijn 2 titel", widget: string }
+              - { name: tl2Desc, label: "Tijdlijn 2 beschrijving", widget: text }
+              - { name: tl3Year, label: "Tijdlijn 3 jaar", widget: string }
+              - { name: tl3Title, label: "Tijdlijn 3 titel", widget: string }
+              - { name: tl3Desc, label: "Tijdlijn 3 beschrijving", widget: text }
+              - { name: tl4Year, label: "Tijdlijn 4 jaar", widget: string }
+              - { name: tl4Title, label: "Tijdlijn 4 titel", widget: string }
+              - { name: tl4Desc, label: "Tijdlijn 4 beschrijving", widget: text }
+              - { name: teamEyebrow, label: "Team kicker", widget: string }
+              - { name: teamTitle, label: "Team titel", widget: string }
+              - { name: member1Name, label: "Lid 1 naam", widget: string }
+              - { name: member1Role, label: "Lid 1 functie", widget: string }
+              - { name: member2Name, label: "Lid 2 naam", widget: string }
+              - { name: member2Role, label: "Lid 2 functie", widget: string }
+              - { name: member3Name, label: "Lid 3 naam", widget: string }
+              - { name: member3Role, label: "Lid 3 functie", widget: string }
+              - { name: member4Name, label: "Lid 4 naam", widget: string }
+              - { name: member4Role, label: "Lid 4 functie", widget: string }
+              - { name: ctaTitle, label: "Knop titel", widget: string }
+              - { name: ctaText, label: "Knop tekst", widget: text }
+              - { name: ctaBtn, label: "Knop knoptekst", widget: string }
+          - name: contact
+            label: "Contact"
+            widget: object
+            fields:
+              - { name: heroPill, label: "Hero label", widget: string }
+              - { name: heroTitlePlain, label: "Hero titel plain", widget: string }
+              - { name: heroTitleGrad, label: "Hero titel grad", widget: string }
+              - { name: heroText, label: "Hero tekst", widget: text }
+              - { name: infoEyebrow, label: "Info kicker", widget: string }
+              - { name: infoTitle, label: "Info titel", widget: string }
+              - { name: infoLead, label: "Info introtekst", widget: text }
+              - { name: phoneDisplay, label: "Telefoon weergave", widget: string }
+              - { name: phoneHref, label: "Telefoon link", widget: string }
+              - { name: emailDisplay, label: "E-mail weergave", widget: string }
+              - { name: emailHref, label: "E-mail link", widget: string }
+              - { name: addressText, label: "Adres tekst", widget: string }
+              - { name: hoursText, label: "Openingstijden tekst", widget: string }
+          - name: colors
+            label: "Kleuren"
+            widget: object
+            fields:
+              - { name: brandColor, label: "Hoofd kleur", widget: color }
+              - { name: adlColor, label: "Adl kleur", widget: color }
