@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: taekemertens1-cpu/caresense-ai-website
+  branch: main
+
+media_folder: "assets"
+public_folder: "/assets"
+
+collections:
+  - name: site
+    label: Website inhoud
+    files:
+      - name: content
+        label: Tekst, knoppen, contact en kleuren
+        file: content.json
+        fields:
+          - { name: heroSubtitle, label: "Ondertekst homepage (onder de hoofdtitel)", widget: text }
+          - { name: heroCtaPrimary, label: "Tekst hoofdknop homepage", widget: string }
+          - { name: heroCtaSecondary, label: "Tekst tweede knop homepage", widget: string }
+          - { name: contactPhoneDisplay, label: "Telefoonnummer (zoals getoond)", widget: string }
+          - { name: contactPhoneHref, label: "Telefoonnummer (link, laat 'tel:' ervoor staan)", widget: string }
+          - { name: contactEmailDisplay, label: "E-mailadres (zoals getoond)", widget: string }
+          - { name: contactEmailHref, label: "E-mailadres (link, laat 'mailto:' ervoor staan)", widget: string }
+          - { name: brandColor, label: "Hoofdkleur (CareSense, meeste pagina's)", widget: color }
+          - { name: adlColor, label: "ADL-Actief kleur", widget: color }
