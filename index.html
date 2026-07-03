@@ -61,10 +61,10 @@
         <div class="hero-copy">
           <span class="pill on-dark"><span class="dot live"></span> Eén platform · zorg, vrijwilligers &amp; sensoren</span>
           <h1>Slimmer monitoren.<br><span class="grad-w">Warmer zorgen.</span></h1>
-          <p class="hero-sub">CareSense AI leert het normale dagritme van elke bewoner via discrete sensoren, signaleert afwijkingen met AI en zet de juiste persoon in beweging — verzorgende, vrijwilliger of familie. Zodat uw team zich kan richten op wat écht telt.</p>
+          <p class="hero-sub" data-content="heroSubtitle">CareSense AI leert het normale dagritme van elke bewoner via discrete sensoren, signaleert afwijkingen met AI en zet de juiste persoon in beweging — verzorgende, vrijwilliger of familie. Zodat uw team zich kan richten op wat écht telt.</p>
           <div class="hero-cta">
-            <a class="btn btn-primary btn-lg" href="#contact" data-view="contact"><i class="ti ti-calendar-plus"></i> Plan een gratis demo</a>
-            <a class="btn btn-outline-w btn-lg btn-arrow" href="#caresense" data-view="caresense">Ontdek het platform <i class="ti ti-arrow-right"></i></a>
+            <a class="btn btn-primary btn-lg" href="#contact" data-view="contact"><i class="ti ti-calendar-plus"></i> <span data-content="heroCtaPrimary">Plan een gratis demo</span></a>
+            <a class="btn btn-outline-w btn-lg btn-arrow" href="#caresense" data-view="caresense"><span data-content="heroCtaSecondary">Ontdek het platform</span> <i class="ti ti-arrow-right"></i></a>
           </div>
           <div class="hero-trust">
             <span><i class="ti ti-shield-check"></i> AVG &amp; NEN 7510</span>
@@ -920,8 +920,8 @@
           <h2 class="h-2 mt-s">We denken graag met u mee</h2>
           <p class="lead">Of u nu een demo wilt, advies zoekt over sensoren of een offerte op maat nodig heeft — we staan voor u klaar.</p>
           <div class="contact-methods">
-            <a class="cmethod" href="tel:+31202345678"><span class="cmethod-ic"><i class="ti ti-phone"></i></span><div><div class="cm-l">Bel ons</div><div class="cm-v">+31 (0)20 234 5678</div></div></a>
-            <a class="cmethod" href="mailto:hallo@caresense.ai"><span class="cmethod-ic"><i class="ti ti-mail"></i></span><div><div class="cm-l">Mail ons</div><div class="cm-v">hallo@caresense.ai</div></div></a>
+            <a class="cmethod" href="tel:+31202345678" data-content-href="contactPhoneHref"><span class="cmethod-ic"><i class="ti ti-phone"></i></span><div><div class="cm-l">Bel ons</div><div class="cm-v" data-content="contactPhoneDisplay">+31 (0)20 234 5678</div></div></a>
+            <a class="cmethod" href="mailto:hallo@caresense.ai" data-content-href="contactEmailHref"><span class="cmethod-ic"><i class="ti ti-mail"></i></span><div><div class="cm-l">Mail ons</div><div class="cm-v" data-content="contactEmailDisplay">hallo@caresense.ai</div></div></a>
             <div class="cmethod"><span class="cmethod-ic"><i class="ti ti-map-pin"></i></span><div><div class="cm-l">Bezoek ons</div><div class="cm-v">Impact Smart Solutions, Nederland</div></div></div>
             <div class="cmethod"><span class="cmethod-ic"><i class="ti ti-clock"></i></span><div><div class="cm-l">Bereikbaar</div><div class="cm-v">Ma–vr · 08:30–17:30</div></div></div>
           </div>
@@ -1016,5 +1016,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
 <script src="app.js"></script>
+<script src="content-loader.js"></script>
 </body>
 </html>
